@@ -1,19 +1,12 @@
 import '../styles/global.css'
 
-import { ChallengesContext } from '../contexts/ChallengeContext'
-import { useState } from 'react';
+import { ChallengesContext, ChallengesProvider } from '../contexts/ChallengeContext';
 
 function MyApp({ Component, pageProps }) {
-  const [level, setLevel] = useState(1);
-  
-  function levelUp() {
-    setLevel(level + 1);
-  }
-
   return (
-    <ChallengesContext.Provider value={{level, levelUp}}>
+    <ChallengesProvider>
       <Component {...pageProps} />
-    </ChallengesContext.Provider>
+    </ChallengesProvider>
   );
 }
 
