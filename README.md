@@ -7,3 +7,7 @@
 # yarn create next-app moveit-next   
 # yarn add typescript @types/react @types/react-dom @types/node -D
 # yarn dev
+
+# yarn add js-cookie
+# https://www.npmjs.com/package/@types/react
+# yarn add @types/js-cookie -D
